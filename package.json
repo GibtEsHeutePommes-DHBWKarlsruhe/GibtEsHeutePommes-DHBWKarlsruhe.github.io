@@ -2,7 +2,13 @@
   "name": "gibtesheutepommes-dhbwkarlsruhe.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "get.js",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.10.1"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.2"
+  },
   "scripts": {
     "clean": "node scripts/clean.js",
     "build": "npm run clean && parcel build src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
@@ -18,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io/issues"
   },
-  "homepage": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.10.1",
-    "shelljs": "^0.8.2"
-  }
+  "homepage": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io#readme"
 }
