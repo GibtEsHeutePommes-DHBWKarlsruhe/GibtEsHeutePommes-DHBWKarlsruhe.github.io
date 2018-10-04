@@ -4,7 +4,10 @@
   "description": "",
   "main": "get.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "node scripts/clean.js",
+    "build": "npm run clean && parcel build src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
+    "watch": "npm run clean && parcel watch src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
+    "start": "parcel index.html --open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io/issues"
   },
-  "homepage": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io#readme"
+  "homepage": "https://github.com/GibtEsHeutePommes-DHBWKarlsruhe/GibtEsHeutePommes-DHBWKarlsruhe.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.1",
+    "shelljs": "^0.8.2"
+  }
 }

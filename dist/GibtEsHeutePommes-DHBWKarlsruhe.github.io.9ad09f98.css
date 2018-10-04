@@ -1,0 +1,10 @@
+html{
+  background-color: #FF00FF;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+main > p{
+  font-size: 20rem;
+  background-color: #78F44A;
+
+}
