@@ -8,3 +8,8 @@ main > p{
   background-color: #78F44A;
 
 }
+
+.hidden{
+  visibility: hidden;
+  display: none;
+}
